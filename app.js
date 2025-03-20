@@ -21,7 +21,7 @@ config({
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // ✅ Your frontend URL
+   origin: ["http://localhost:5173", "https://primebidz.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true, // ✅ Important for cookies & authentication
